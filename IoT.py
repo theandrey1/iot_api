@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 def getconnection():
-    client = MongoClient('mongodb://dotnet1:dotnet1@candidate.2.mongolayer.com:10358,candidate.3.mongolayer.com:10315/solaire-217?replicaSet=set-5581c0387aaf5eb1cc000d93')
+    client = MongoClient('mongodb://<User>:<Password>@candidate.2.mongolayer.com:10358,candidate.3.mongolayer.com:10315/solaire-217?replicaSet=set-5581c0387aaf5eb1cc000d93')
     db = client.get_database('solaire-217')
     return db
 
